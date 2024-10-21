@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gta4xls.mk
+    $(LOCAL_DIR)/lineage_a55x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_gta4xls-eng \
-    lineage_gta4xls-user \
-    lineage_gta4xls-userdebug
+    lineage_a55x-eng \
+    lineage_a55x-user \
+    lineage_a55x-userdebug

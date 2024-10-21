@@ -14,15 +14,15 @@
 # limitations under the License.
 
 ## Inherit from the common tree
-include device/samsung/gta4xls-common/BoardConfigCommon.mk
+include device/samsung/a55x-common/BoardConfigCommon.mk
 
 ## Inherit from the proprietary configuration
-include vendor/samsung/gta4xls/BoardConfigVendor.mk
+include vendor/samsung/a55x/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/gta4xls
+DEVICE_PATH := device/samsung/a55x
 
 ## Kernel
-TARGET_KERNEL_CONFIG := s5e8825-gta4xls_defconfig
+TARGET_KERNEL_CONFIG := essi_defconfig
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
