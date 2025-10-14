@@ -20,8 +20,6 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/libskeymint_cli.so': blob_fixup()
-        .add_needed('libshim_crypto.so'),
     'vendor/lib64/hw/camera.s5e8845.so': blob_fixup()
         .add_needed('libui_shim.so'),
     'vendor/lib64/libvkservice.so': blob_fixup()
