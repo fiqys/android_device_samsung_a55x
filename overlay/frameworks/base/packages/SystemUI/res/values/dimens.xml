@@ -22,18 +22,22 @@
     <item name="pixel_pitch" format="float" type="dimen">65.05</item>
 
     <!-- The padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">10dp</dimen>
+    <dimen name="status_bar_padding_top">8dp</dimen>
 
     <!-- The padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">10dp</dimen>
+    <dimen name="status_bar_padding_start">16dp</dimen>
 
     <!-- The padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">10dp</dimen>
+    <dimen name="status_bar_padding_end">8dp</dimen>
 
-    <!-- Status bar values -->
-    <dimen name="status_bar_height_default">24dp</dimen>
-    <dimen name="status_bar_height_portrait">24dp</dimen>
-    <dimen name="status_bar_height_landscape">24dp</dimen>
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">25dp</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">8dp</dimen>
+
+    <!-- Rounded corner content padding -->
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
 
     <!-- Location on the screen of the center of the physical power button. This is a reasonable
          default that should be overridden by device-specific overlays. -->
