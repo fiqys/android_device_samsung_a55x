@@ -5,4 +5,4 @@ vendor.rild.libpath=/vendor/lib64/libsec-ril.so
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
 ## Fingerprint
-ro.vendor.fingerprint.sensor_location=540|2055|130
+ro.vendor.fingerprint.sensor_location=540|2045|115
