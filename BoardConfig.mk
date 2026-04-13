@@ -14,7 +14,7 @@
 # limitations under the License.
 
 DEVICE_PATH := device/samsung/a55x
-TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
+TARGET_KERNEL_DIR := kernel/samsung/a55x
 
 ## Inherit from the common tree
 include device/samsung/a55x-common/BoardConfigCommon.mk
@@ -31,11 +31,10 @@ TARGET_KERNEL_CONFIG := essi_defconfig
 
 # Kernel Modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/kernel/modules.load))
-BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/kernel/modules.load.system_dlkm))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/kernel/modules.load.vendor_dlkm))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
-RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
-BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
-BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
+SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/configs/kernel/modules.include.system_dlkm))
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
