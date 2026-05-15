@@ -32,6 +32,7 @@ module = ExtractUtilsModule(
     'a55x',
     'samsung',
     namespace_imports=namespace_imports,
+    add_firmware_proprietary_file=True,
     blob_fixups=blob_fixups,
 )
 
