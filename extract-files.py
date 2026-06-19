@@ -17,6 +17,9 @@ from extract_utils.main import (
 namespace_imports = [
     'device/samsung/a55x-common',
     'vendor/samsung/a55x-common',
+    'hardware/samsung_slsi-linaro/exynos',
+    'hardware/samsung_slsi-linaro/graphics',
+    'hardware/samsung_slsi-linaro/sgpu',
 ]
 
 blob_fixups: blob_fixups_user_type = {

@@ -99,6 +99,15 @@
          -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 M 0,8.177777777777778 a 11.73333333333333,11.73333333333333 0 1,0 0,23.46666666666667 a 11.73333333333333,11.73333333333333 0 1,0 0,-23.46666666666667 Z @dp</string>
 
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+         -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <bool name="config_physicalDisplayCutout">true</bool>
+
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">M -11.7333,8.1777 h 23.4666 v 23.4666 h -23.4666 Z @dp</string> 
+
     <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
     <bool name="config_telephony5gStandalone">true</bool>
 
