@@ -3,7 +3,6 @@
 ## Audio
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/dolby/dax-default.xml
-vendor/lib64/librecordalive.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
 vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/lib64/soundfx/libswdap.so
