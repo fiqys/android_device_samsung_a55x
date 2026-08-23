@@ -4,3 +4,6 @@
 #
 
 DEVICE_PATH := device/samsung/a55x
+
+# Security
+VENDOR_SECURITY_PATCH := 2026-09-05
