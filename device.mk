@@ -58,6 +58,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.exynos \
     android.hardware.boot-service.exynos_recovery
 
+# Gatekeeper
+PRODUCT_PACKAGES += android.hardware.gatekeeper-service.teegris
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.s5e8845 \
