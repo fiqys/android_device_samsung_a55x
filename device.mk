@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.exynos \
     android.hardware.boot-service.exynos_recovery
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Gatekeeper
 PRODUCT_PACKAGES += android.hardware.gatekeeper-service.teegris
 
