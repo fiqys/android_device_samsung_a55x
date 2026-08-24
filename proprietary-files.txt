@@ -206,6 +206,16 @@ vendor/etc/libse-gto-hal.conf
 vendor/etc/nfc/sec_s3nsen6_hwreg.bin
 vendor/etc/nfc/sec_s3nsen6_swreg.bin
 
+# Ramdisk - Touch - Firmware
+vendor/firmware/tsp/gt9895_a55x.bin:recovery/root/vendor/firmware/tsp/gt9895_a55x.bin
+vendor/firmware/tsp/gt9895_a55x.bin:vendor_ramdisk/vendor/firmware/tsp/gt9895_a55x.bin
+
+# Ramdisk - SGPU - Firmware - from SM-A556B
+recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_b.bin
+
+# Ramdisk - SGPU - Firmware - from SM-A556E
+recovery/lib/firmware/sgpu/SM-A556E/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_e.bin
+
 # RIL
 vendor/bin/hw/rild
 vendor/etc/locale/plmn_delta_eng.bin
