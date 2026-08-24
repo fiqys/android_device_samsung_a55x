@@ -51,6 +51,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio_effects.xml \
+    audio_policy_configuration.xml \
+    bluetooth_with_le_audio_policy_configuration_7_0.xml
+
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.exynos \
