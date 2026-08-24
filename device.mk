@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     audio.usbv2.default \
     bluetooth_with_le_audio_policy_configuration_7_0.xml \
     mixer_paths.xml \
+    SamsungDAP \
     usbv2_audio_policy_configuration.xml
 
 TARGET_EXCLUDES_AUDIOFX := true
