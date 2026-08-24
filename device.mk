@@ -98,6 +98,19 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.exynos \
     android.hardware.boot-service.exynos_recovery
 
+# Codec2
+PRODUCT_PACKAGES += \
+    samsung.hardware.media.c2-service \
+    libExynosC2ComponentStore \
+    libExynosC2H264Dec \
+    libExynosC2H264Enc \
+    libExynosC2HevcDec \
+    libExynosC2HevcEnc \
+    libExynosC2Vp8Dec \
+    libExynosC2Vp8Enc \
+    libExynosC2Vp9Dec \
+    libExynosC2Vp9Enc
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
