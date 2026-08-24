@@ -21,6 +21,9 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_SLSI := true
+
 # Boot Image
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_BOOTCONFIG := buildtime_bootconfig=enable
