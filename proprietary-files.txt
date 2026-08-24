@@ -131,7 +131,7 @@ vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libril_sem.so
-vendor/lib64/libsec-ril.so
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libsemnativecarrierfeature.so
