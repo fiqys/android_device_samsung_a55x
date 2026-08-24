@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usbv2.default \
-    bluetooth_with_le_audio_policy_configuration_7_0.xml
+    bluetooth_with_le_audio_policy_configuration_7_0.xml \
+    usbv2_audio_policy_configuration.xml
 
 # Boot Control
 PRODUCT_PACKAGES += \
