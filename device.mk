@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
 
+$(call soong_config_set,samsungUdfpsVars,dim_layer_zorder,0xff)
+$(call soong_config_set,samsungUdfpsVars,udfps_zorder,0x100)
+$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/samsung/fingerprint:libudfps_extension.samsung)
+
 # Gatekeeper
 PRODUCT_PACKAGES += android.hardware.gatekeeper-service.teegris
 
