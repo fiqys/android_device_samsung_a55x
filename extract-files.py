@@ -65,6 +65,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/libnfc-sec-vendor.conf': blob_fixup()
         .regex_replace('F_', 'F_HW_')
         .regex_replace('SW_OPT', 'RF_SW'),
+    'vendor/etc/wifi/wpa_supplicant_overlay.conf': blob_fixup().add_line_if_missing('p2p_no_group_iface=1'),
     'vendor/lib64/hw/camera.s5e8845.so': blob_fixup()
         .sig_replace('e7 89 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::enable m_sendRequest()
         .sig_replace('92 89 01 94', '1f 20 03 d5') # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
