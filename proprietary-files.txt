@@ -162,6 +162,26 @@ vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 # Fingerprint - Init
 vendor/etc/init/init.fingerprint.rc
 
+# Firmware - from SM-A556B
+vendor/firmware/AIE.bin:vendor/firmware/SM-A556B/AIE.bin
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556B/calliope_sram.bin
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556B/mfc_fw.bin
+vendor/firmware/os.checked.bin:vendor/firmware/SM-A556B/os.checked.bin
+vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556B/pablo_icpufw.bin
+vendor/firmware/vts.bin:vendor/firmware/SM-A556B/vts.bin
+vendor/firmware/wifi/mx140.bin:vendor/firmware/SM-A556B/wifi/mx140.bin
+vendor/firmware/wifi/slsi_reg_database.bin:vendor/firmware/SM-A556B/wifi/slsi_reg_database.bin
+
+# Firmware - from SM-A556E - A556EXXSGDZG2
+vendor/firmware/AIE.bin:vendor/firmware/SM-A556E/AIE.bin|92ee38461fdc2546d27029c6b3f39a75b4714900
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556E/calliope_sram.bin|3a65957a075692ef25faf6d99c6b090bdf6ff92c
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556E/mfc_fw.bin|9355d12f167af830f86eac7a7d7ab0ab59120695
+vendor/firmware/os.checked.bin:vendor/firmware/SM-A556E/os.checked.bin|0f29efe4a588ee9da03a509bb6bbb419243cf2fe
+vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556E/pablo_icpufw.bin|760fc54eb40685a830153a61e2ee05d6e2c537d1
+vendor/firmware/vts.bin:vendor/firmware/SM-A556E/vts.bin|642fadb63ea13a311850b2ef0bb6277172399550
+vendor/firmware/wifi/mx140.bin:vendor/firmware/SM-A556E/wifi/mx140.bin|a1fe5b9f82d712a19bddff9cc9a402c2ce8b3737
+vendor/firmware/wifi/slsi_reg_database.bin:vendor/firmware/SM-A556E/wifi/slsi_reg_database.bin|5956d7d88ec2e4038f2dd4da771b069afa19b55b
+
 # GNSS
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gps.rose.sh:vendor/bin/hw/gps.sh
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/init.gps.rose.apex.sh.rc:vendor/etc/init/init.gps.rose.rc
