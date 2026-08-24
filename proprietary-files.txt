@@ -31,6 +31,31 @@ vendor/lib64/soundfx/libmyspace.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
 
+# DQE
+vendor/etc/dqe/DQE_coef_data.xml
+vendor/etc/dqe/calib_data_atc.xml
+vendor/etc/dqe/calib_data_atc_ana6710_a55x.xml
+vendor/etc/dqe/calib_data_bypass.xml
+vendor/etc/dqe/calib_data_colormode0.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x_hdr.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x_natural.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x_vivid0.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x_vivid1.xml
+vendor/etc/dqe/calib_data_colormode0_ana6710_a55x_vivid2.xml
+vendor/etc/dqe/calib_data_colormode0_off.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_hdr.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_natural.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid0.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid1.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid2.xml
+vendor/etc/dqe/calib_data_colortemp.xml
+vendor/etc/dqe/calib_data_eyetemp.xml
+vendor/etc/dqe/calib_data_rgbgain.xml
+vendor/etc/dqe/calib_data_skincolor.xml
+vendor/etc/dqe/calib_data_whitepoint.xml
+
 # Keymint
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
