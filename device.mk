@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += \
     libExynosC2Vp9Dec \
     libExynosC2Vp9Enc
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-service.samsung
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service.teegris
