@@ -106,6 +106,13 @@ vendor/lib64/libSGPUOpenCL.so
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 
+# Sensors
+vendor/lib64/sensors.inputvirtual.so
+vendor/lib64/sensors.sensorhub.so
+
+# Sensors - Init
+vendor/etc/init/init.sensorhub.rc
+
 # TEEgris
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
