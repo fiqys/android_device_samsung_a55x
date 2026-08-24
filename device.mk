@@ -214,6 +214,15 @@ PRODUCT_SOONG_NAMESPACES += \
 # Task Profiles
 PRODUCT_PACKAGES += task_profiles.json.s5e8845
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.pixel \
+    thermal_symlinks
+
+# Thermal - Configuration
+PRODUCT_PACKAGES += \
+    thermal_info_config.json
+
 # Inherit from the proprietary version
 $(call inherit-product-if-exists, vendor/samsung/a55x/a55x-vendor.mk)
 
