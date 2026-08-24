@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
 # KeyMint
 PRODUCT_PACKAGES += android.hardware.security.keymint-service.samsung
 
+# Linker
+PRODUCT_PACKAGES += \
+    public.libraries.txt
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
