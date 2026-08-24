@@ -84,3 +84,10 @@ prebuilt_firmware {
     relative_install_path: "wifi",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "wpa_supplicant.conf",
+    src: ":wpa_supplicant_conf_gen",
+    sub_dir: "wifi",
+    vendor: true,
+}
