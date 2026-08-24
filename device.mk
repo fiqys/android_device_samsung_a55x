@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
     libExynosC2Vp9Dec \
     libExynosC2Vp9Enc
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-service.samsung
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
