@@ -59,6 +59,10 @@ $(call soong_config_set_bool,frameworks_av,use_aosp_default_volume_tables,true)
 $(call soong_config_set_bool,frameworks_av,use_aosp_r_submix_audio_policy_configuration,true)
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@7.1-impl \
+    android.hardware.bluetooth.audio-impl \
     aosp_audio_policy_volumes.xml \
     aosp_default_volume_tables.xml \
     aosp_r_submix_audio_policy_configuration.xml \
@@ -106,7 +110,13 @@ PRODUCT_PACKAGES += \
     handheld_core_hardware.prebuilt.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+    frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio.low_latency.prebuilt.xml \
+    android.hardware.bluetooth_le.prebuilt.xml
 
 # Platform
 BOARD_SHIPPING_API_LEVEL := 34
