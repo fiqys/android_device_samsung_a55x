@@ -73,9 +73,13 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usbv2.default \
     bluetooth_with_le_audio_policy_configuration_7_0.xml \
+    libsamsungSoundbooster_plus \
     mixer_paths.xml \
     SamsungDAP \
+    SoundBoosterStage \
     usbv2_audio_policy_configuration.xml
+
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/a55x:lib_SoundBooster_ver2000)
 
 TARGET_EXCLUDES_AUDIOFX := true
 
