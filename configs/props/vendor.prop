@@ -48,6 +48,9 @@ ro.vendor.gpu.dataspace=1
 vendor.debug.c2.sbwc.enable=true
 vendor.media.omx=0
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Graphics
 debug.sf.auto_latch_unsignaled=0
 debug.sf.early.app.duration=16600000
