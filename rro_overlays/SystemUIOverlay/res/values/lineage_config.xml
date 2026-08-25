@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Whether to enable framework dimming for UDFPS -->
+    <bool name="config_udfpsFrameworkDimming">true</bool>
+
+    <!-- Brightness-to-alpha lookup table (LUT) for UDFPS framework dimming.
+         Each entry is in the format <brightness>,<alpha> where:
+           - brightness = panel backlight level
+           - alpha = dim layer transparency applied at that brightness
+         Rules:
+           • The entries should be strictly ascending by brightness.
+           • First entry = <minBrightness,maxAlpha>.
+           • Last entry  = <maxBrightness,minAlpha>.
+    -->
+    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
+          <item>0,247</item>
+          <item>7,222</item>
+          <item>22,216</item>
+          <item>27,209</item>
+          <item>30,205</item>
+          <item>35,201</item>
+          <item>39,199</item>
+          <item>45,195</item>
+          <item>51,189</item>
+          <item>56,185</item>
+          <item>60,180</item>
+          <item>67,174</item>
+          <item>71,170</item>
+          <item>80,162</item>
+          <item>90,152</item>
+          <item>96,145</item>
+          <item>101,140</item>
+          <item>107,133</item>
+          <item>114,124</item>
+          <item>121,115</item>
+          <item>136,94</item>
+          <item>142,83</item>
+          <item>149,64</item>
+          <item>155,45</item>
+          <item>160,6</item>
+          <item>255,1</item>
+    </string-array>
+</resources>
