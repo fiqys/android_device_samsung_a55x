@@ -108,6 +108,7 @@ include hardware/samsung_slsi-linaro/config/BoardConfig8845.mk
 VENDOR_SECURITY_PATCH := 2026-07-05
 
 # SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/samsung_slsi/sepolicy/sepolicy.mk
 include device/lineage/sepolicy/exynos/sepolicy.mk
