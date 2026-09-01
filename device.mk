@@ -127,6 +127,9 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,samsungCameraVars,needs_fps_field,true)
 $(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 
+# Display Configuration
+PRODUCT_PACKAGES += displayconfig.xml
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
