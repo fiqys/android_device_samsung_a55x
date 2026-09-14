@@ -54,6 +54,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('/bin/(?!hw/)', '/bin/hw/')
         .regex_replace('gps.rose.dcm.cfg', 'gps.dcm.cfg')
         .regex_replace('gps.rose.sh', 'gps.sh')
+        .regex_replace(r'\n\non property:dev\.gnss\.initializehal=ON[\s\S]*\Z', '')
+        .regex_replace(r'\n\non property:dev\.gnss\.silentlogging=ON[\s\S]*\Z', '')
         .regex_replace(
             'vendor\\.samsung\\.hardware\\.gnss\\.lsi\\.rose-service\n',
             'vendor.samsung.hardware.gnss-service\n'),
