@@ -294,3 +294,6 @@ vendor/firmware/RTP_5.bin
 vendor/firmware/RTP_41.bin
 vendor/firmware/RTP_119.bin
 vendor/firmware/RTP_124.bin
+
+# VNDK
+system/system_ext/apex/com.android.vndk.v34/lib64/libcrypto.so:vendor/lib64/libcrypto-v34.so;FIX_SONAME|645314168ce45185344f03e86cebd9363791eee1|3bf1f817e764ed8eee9e9c85a06ef68ce5b2dc0f
