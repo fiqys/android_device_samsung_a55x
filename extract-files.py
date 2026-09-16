@@ -69,7 +69,7 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('92 89 01 94', '1f 20 03 d5') # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
         .add_needed('libui_shim.so'),
     'vendor/lib64/libskeymint_cli.so': blob_fixup()
-        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+        .replace_needed('libcrypto.so', 'libcrypto-v34.so'),
     'vendor/lib64/libsec-ril-impl.so': blob_fixup()
         # Always emit uiccApplicationsEnablementChanged
         .sig_replace('1f 00 08 6b 0c 01 00 54', '1f 00 08 6b 1f 20 03 d5')
@@ -109,16 +109,18 @@ module = ExtractUtilsModule(
 )
 
 if len(sys.argv) > 1 and os.path.isdir(sys.argv[1]):
-    apex_path = os.path.join(sys.argv[1], 'vendor/apex/com.samsung.android.gnss.lsi.rose.signed')
-
-    if not os.path.isdir(apex_path):
-        print(f'Extracting {apex_path}...')
-        with tempfile.TemporaryDirectory() as tmp_dir:
-            ZipFile(apex_path + '.apex').extractall(tmp_dir)
-            with tempfile.TemporaryDirectory() as tmp_payload_dir:
-                os.system('sudo mount -o ro ' + tmp_dir + '/apex_payload.img ' + tmp_payload_dir)
-                copytree(tmp_payload_dir, apex_path, ignore = lambda path, names: 'lost+found')
-                os.system('sudo umount ' + tmp_payload_dir)
+    for apex_path in [
+        os.path.join(sys.argv[1], 'vendor/apex/com.samsung.android.gnss.lsi.rose.signed'),
+        os.path.join(sys.argv[1], 'system/system_ext/apex/com.android.vndk.v34'),
+    ]:
+        if not os.path.isdir(apex_path):
+            print(f'Extracting {apex_path}...')
+            with tempfile.TemporaryDirectory() as tmp_dir:
+                ZipFile(apex_path + '.apex').extractall(tmp_dir)
+                with tempfile.TemporaryDirectory() as tmp_payload_dir:
+                    os.system('sudo mount -o ro ' + tmp_dir + '/apex_payload.img ' + tmp_payload_dir)
+                    copytree(tmp_payload_dir, apex_path, ignore=lambda path, names: 'lost+found')
+                    os.system('sudo umount ' + tmp_payload_dir)
 
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
