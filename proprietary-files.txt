@@ -273,7 +273,6 @@ vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13_prebuilt.bin
 
 # Sensors
-vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
 
 # Sensors - Init
