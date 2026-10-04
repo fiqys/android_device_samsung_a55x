@@ -8,6 +8,7 @@
 
 #include "Sensor.h"
 #include <chrono>
+#include <linux/input.h>
 #include <mutex>
 
 namespace android {
@@ -28,11 +29,31 @@ class HoverProximitySensor : public Sensor {
 
     void activate(bool enable) override;
     void readEvents() override;
+    void updateScreenState(bool screenOn);
 
   private:
-    bool isValidEvent(int value);
+    bool isValidEvent(const input_event& event);
+    bool handleScreenStateEvent(const input_event& event);
+    void setEarDetectMode(int mode);
+    void transitionToMode0();
+    void transitionToMode1();
+    void transitionToMode3();
+    bool shouldSkipEvent();
+    bool isDuplicateEvent(float distance);
 
     static constexpr const char* SYSFS_EAR_DETECT = "/sys/class/sec/tsp/cmd";
+    static constexpr int ABS_MT_CUSTOM = 0x3e;
+    static constexpr int SCREEN_ON_EVENT = 0xFD;
+    static constexpr int SCREEN_OFF_EVENT = 0xFE;
+
+    std::mutex mLock;
+    bool mEnabledEarHover;
+    bool mScreenOn;
+    bool mFirstEvent;
+    bool mHoverEventSkip;
+    int mCurrentMode;
+    float mLastReportedDistance;
+    int mLastProximityState;
 };
 
 }  // namespace implementation
