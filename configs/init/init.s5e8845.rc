@@ -349,6 +349,8 @@ on post-fs-data
     mkdir /data/vendor/enn 0771 system system
 
 on early-boot
+    chown system system /sys/class/sec/tsp/scrub_pos
+
     # Update dm-verity state and set partition.*.verified properties
     verity_update_state
 
