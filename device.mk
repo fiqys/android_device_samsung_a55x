@@ -215,7 +215,8 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.samsung-multihal \
+    sensors.samsung
 
 # Sensors - Configuration
 PRODUCT_PACKAGES += \
