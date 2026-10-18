@@ -213,6 +213,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlay \
+    CarrierSettingsResOverlay \
     FrameworkResOverlay \
     LineageSDKOverlay \
     NcmTetheringOverlay \
