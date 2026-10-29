@@ -55,7 +55,9 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 PRODUCT_PACKAGES += \
     audio_effects.xml \
     audio_policy_configuration.xml \
-    bluetooth_with_le_audio_policy_configuration_7_0.xml
+    audio.usbv2.default \
+    bluetooth_with_le_audio_policy_configuration_7_0.xml \
+    usbv2_audio_policy_configuration.xml
 
 # Boot Control
 PRODUCT_PACKAGES += \
